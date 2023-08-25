@@ -1,0 +1,14 @@
+.halloween {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+}
+
+.monster {
+    text-align: center;
+
+    img {
+        width: 50%;
+        max-width: 100px;
+    }
+}

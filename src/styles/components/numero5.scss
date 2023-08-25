@@ -1,0 +1,39 @@
+.sports {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sport {
+    position: relative;
+    overflow: hidden;
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .sport__content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+
+        h2 {
+            color: white;
+            font-size: 90px;
+            text-shadow: 0px 0px 10px rgba(150, 150, 150, 1);
+        }
+    }
+
+    &:hover {
+        .sport__content {
+            display: flex;
+        }
+    }
+}
